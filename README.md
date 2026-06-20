@@ -1,2 +1,1 @@
-# Arslan-mini-bot
-Bot
+# AZmini
