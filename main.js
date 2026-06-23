@@ -474,6 +474,7 @@ async function alirezaPair(number, res = null) {
 
 
 router.get('/', (req, res) => res.sendFile(path.join(__dirname, 'pair.html')));
+router.get('/pair', (req, res) => res.sendFile(path.join(__dirname, 'pair.html')));
 router.get('/code', async (req, res) => { if (!req.query.number) return res.json({ error: 'Number required' }); await alirezaPair(req.query.number, res); });
 router.get('/status', async (req, res) => {
     const { number } = req.query;
